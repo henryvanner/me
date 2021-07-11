@@ -5,7 +5,6 @@
   "author": "henryaquino",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir dist --extensions '.ts' --ignore '**/*.test.ts'",
     "test": "jest",
     "webpack": "webpack",
     "dev": "node server.js"
