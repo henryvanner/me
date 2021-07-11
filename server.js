@@ -8,7 +8,15 @@ const compiler = webpack(webpackConfig)
 
 app.use(webpackDevMiddleware(compiler, { publicPath: webpackConfig.output.publicPath }))
 
-// Serve the files on port 3000.
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!\n')
+/**
+ * This is this way so the app listens on the correct port
+ * set by Heroku (indicated by the env variable PORT )
+ */
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function () {
+  console.log(`me-haquino is running on port ${port}!\n`)
 })
