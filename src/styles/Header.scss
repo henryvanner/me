@@ -1,0 +1,134 @@
+@use './modules/variables';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: variables.$color-indigo;
+  z-index: 990;
+}
+
+.appBar {
+  padding: variables.$space-md;
+  color: #fff;
+
+  @media screen and (min-width: variables.$device-medium) {
+    display: none;
+  }
+}
+
+.appBar__toggler {
+  display: inline-block;
+  padding: variables.$space-md;
+}
+
+.appBar__title {
+  margin-left: variables.$space-xxlg;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navBar__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: hsla(0, 0%, 0%, 0.35);
+
+  .navBar--visible & {
+    display: block;
+  }
+
+  @media screen and (min-width: variables.$device-medium) {
+    all: unset;
+    display: none;
+  }
+}
+
+.navBar__content {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #fff;
+  max-width: calc(#{variables.$device-small} - 135px);
+  transition: left 0.5s;
+
+  .navBar--visible & {
+    left: 0;
+  }
+
+  @media screen and (min-width: variables.$device-medium) {
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: variables.$device-medium;
+    background-color: variables.$color-indigo;
+    color: #fff;
+  }
+}
+
+.navBarHeader {
+  padding: variables.$space-lg variables.$space-lg + variables.$space-md;
+
+  @media screen and (min-width: variables.$device-medium) { display: none; }
+}
+
+.navBarHeader__name {
+  color: #232323;
+  margin: variables.$space-sm 0;
+}
+.navBarHeader__email { color: variables.$color-dark-light; }
+
+.siteNavMenu,
+.socialNavMenu {
+  padding: variables.$space-lg variables.$space-md;
+
+  @media screen and (min-width: variables.$device-medium) {
+    padding: unset;
+    display: flex;
+  }
+}
+
+.siteNavMenu__item {
+  @media screen and (min-width: variables.$device-medium) {
+    margin-right: variables.$space-xlg;
+
+    &:last-child { margin-right: 0; }
+  }
+}
+
+.siteNavMenu__item--selected {
+  border-radius: 0.25rem;
+  background-color: scale-color(variables.$color-indigo, $lightness: 80%);
+  color: variables.$color-indigo;
+
+  @media screen and (min-width: variables.$device-medium) { all: unset; }
+}
+
+.siteNavMenu__link,
+.socialNavMenu__link {
+  display: block;
+  padding: variables.$space-lg;
+  font-weight: bold;
+
+  &:hover { font-weight: normal; }
+
+  @media screen and (min-width: variables.$device-medium) {
+    display: inline-block;
+    padding: variables.$space-xlg variables.$space-lg;
+  }
+}
+
+.socialMediaName {
+  margin-left: variables.$space-lg;
+
+  @media screen and (min-width: variables.$device-medium) { display: none; }
+}

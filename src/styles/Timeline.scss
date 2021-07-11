@@ -1,0 +1,94 @@
+@use './modules/variables';
+
+$timeline-slot-min-width: 320px;
+$line-width: 1px;
+$cards-timeline-gap: variables.$space-xlg; // gap between 'cards' and 'timeline'
+$card-vertical-margin: variables.$space-xlg;
+$card-min-width: 360px;
+$timeline-dot-diameter: 5px;
+$timeline-dol-color: #444;
+$timeline-dot-top: calc(#{variables.$space-xxlg} + #{variables.$space-lg} + #{$card-vertical-margin});
+$timeline-dot-left: calc((-1 * (#{$timeline-dot-diameter - $line-width} / 2)) - #{$line-width});
+
+.timeline__slot {
+  margin: 0 auto;
+  width: 100%;
+  min-width: $timeline-slot-min-width;
+
+  @media screen and (min-width: variables.$device-small) {
+    max-width: variables.$device-small;
+  }
+
+  @media screen and (min-width: variables.$device-medium) {
+    max-width: variables.$device-medium;
+  }
+}
+
+.timeline__event {
+  display: flex;
+  width: 100%;
+}
+
+.timeline__event--left {
+  @media screen and (min-width: variables.$device-medium) {
+    flex-direction: row-reverse;
+
+    .card__tail {
+      left: unset;
+      right: 0;
+      transform: translateX(100%) rotate(180deg);
+    }
+  }
+}
+
+.timeline__line {
+  border: 0;
+  border-left-width: $line-width;
+  border-color: $timeline-dol-color;
+  border-style: solid;
+  width: $line-width;
+
+  @media screen and (min-width: variables.$device-medium) {
+    margin-left: 50%;
+
+    .timeline__event--left & {
+      margin-left: unset;
+      margin-right: calc(50% - #{$line-width});
+    }
+  }
+}
+
+.timeline__dot {
+  position: relative;
+  top: $timeline-dot-top;
+  left: $timeline-dot-left;
+  border: 1px solid $timeline-dol-color;
+  border-radius: 50%;
+  width: $timeline-dot-diameter;
+  height: $timeline-dot-diameter;
+  background-color: $timeline-dol-color;
+}
+
+.timeline__dot--top {
+  top: 0;
+}
+
+.timeline__card-slot {
+  margin: $card-vertical-margin 0 $card-vertical-margin $cards-timeline-gap;
+  flex-grow: 1;
+  opacity: 1;
+  transition: opacity 4s;
+
+  .timeline__event--hidden & {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: variables.$device-medium) {
+    flex-grow: unset;
+    min-width: $card-min-width;
+
+    .timeline__event--left & {
+      margin: $card-vertical-margin $cards-timeline-gap $card-vertical-margin 0;
+    }
+  }
+}

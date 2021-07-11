@@ -1,0 +1,11 @@
+@use './modules/variables';
+
+.mainLayout__body {
+  margin-top: 51px;
+  padding: variables.$space-lg;
+  background-color: #fff;
+}
+
+.mainLayout__body--width-full {
+  padding: 0;
+}

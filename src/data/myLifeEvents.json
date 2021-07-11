@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "avatarImg": "https://images.vexels.com/media/users/3/150855/isolated/lists/045c8b7dc89c7095a1c5ad0640c779d6-baby-bed-bell-circle-icon.png",
+      "data": [
+        { "label": "City", "value": "Catacaos" },
+        { "label": "Country", "value": "Perú" }
+      ],
+      "date": "1994-04-07",
+      "title": "I was born!"
+    },
+    {
+      "avatarImg": "https://image.flaticon.com/icons/png/512/234/234588.png",
+      "data": [
+        { "label": "City", "value": "Piura" },
+        { "label": "School", "value": "Hogar San Antonio" }
+      ],
+      "date": "2009-12-31",
+      "dateFormat": "MMM YYYY",
+      "title": "Graduated from High School"
+    },
+    {
+      "avatarImg": "https://image.flaticon.com/icons/png/512/306/306308.png",
+      "data": [
+        { "label": "City", "value": "Piura" },
+        { "label": "University", "value": "Universidad Nacional de Piura" },
+        { "label": "Field of Study", "value": "Informatics" },
+        { "label": "Degree", "value": "Bachelor" }
+      ],
+      "date": "2014-12-31",
+      "dateFormat": "MMM YYYY",
+      "title": "Graduated from University"
+    },
+    {
+      "avatarImg": "https://pbs.twimg.com/profile_images/1232402789487214592/RGWIhsnw_400x400.jpg",
+      "data": [
+        { "label": "Department", "value": "Informatics" },
+        { "label": "Team", "value": "Geo-referenced Cadastre" },
+        { "label": "Role", "value": "GIS Developer" }
+      ],
+      "date": "2015-06-15",
+      "dateFormat": "MMM YYYY",
+      "title": "Joined EPS GRAU S.A."
+    },
+    {
+      "avatarImg": "https://cdn0.iconfinder.com/data/icons/tutor-icon-set/512/diploma_icon-512.png",
+      "data": [
+        { "label": "City", "value": "Piura" },
+        { "label": "University", "value": "Universidad Nacional de Piura" }
+      ],
+      "date": "2019-10-01",
+      "dateFormat": "MMM YYYY",
+      "title": "Thesis approved"
+    },
+    {
+      "avatarImg": "https://pbs.twimg.com/profile_images/910810519996633089/mkbclxt4.jpg",
+      "data": [
+        { "label": "Exam Type", "value": "KET" },
+        { "label": "Level achieved", "value": "B1" }
+      ],
+      "date": "2019-12-19",
+      "dateFormat": "MMM YYYY",
+      "title": "Took Cambridge Exam"
+    },
+    {
+      "avatarImg": "https://media-exp1.licdn.com/dms/image/C4D0BAQEPO-II6ontyw/company-logo_200_200/0/1612908787928?e=2159024400&v=beta&t=7Q8rx_xIJsjh-xWslR-fH91vE7M046zSLMsXIMdDjv4",
+      "data": [{ "label": "Role", "value": "Developer" }],
+      "date": "2021-01-04",
+      "dateFormat": "MMM YYYY",
+      "title": "Joined Oktana"
+    }
+  ]
+}

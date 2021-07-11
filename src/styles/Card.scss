@@ -1,0 +1,63 @@
+@use './modules/variables';
+
+$border-color: #f3f3f3;
+$light: #888;
+
+.card {
+  position: relative;
+  display: flex;
+  box-shadow: 0 4px 7px 1px rgb(0 0 0 / 10%);
+  border: 0.095rem solid $border-color;
+  border-radius: 0.33rem;
+  width: 100%;
+  padding: variables.$space-xlg;
+  background-color: #fff;
+}
+
+.card__avatar {
+  margin: 1rem 1rem 0 0;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.card__content-slot {
+  flex: 1;
+  padding: 0 variables.$space-lg;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: variables.$space-sm;
+}
+
+.card__date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0;
+}
+
+// dataSlice-related
+.dataSlice {
+  display: flex;
+  margin: 0 0 variables.$space-sm;
+}
+
+.dataSlice__label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.dataSlice__label::after {
+  content: ':';
+  margin-left: variables.$space-md;
+}
+
+.dataSlice__value {
+  flex-grow: 1;
+  margin-left: variables.$space-md;
+  font-size: 0.9rem;
+  color: #666;
+}
