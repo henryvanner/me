@@ -10,7 +10,7 @@ app.use(webpackDevMiddleware(compiler, { publicPath: webpackConfig.output.public
 
 /**
  * This is this way so the app listens on the correct port
- * set by Heroku (indicated by the env variable PORT )
+ * set by Heroku ( indicated by the env variable PORT )
  */
 let port = process.env.PORT;
 if (port == null || port == "") {
