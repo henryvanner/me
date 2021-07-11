@@ -2,3 +2,4 @@ jest.config.js
 webpack.config.js
 dist/
 public/
+server.js
