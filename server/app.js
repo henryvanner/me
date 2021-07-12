@@ -1,11 +1,11 @@
 const process = require('process')
 const express = require('express')
-const webpackDevServer = require('./webpackDevServer')
 
 const app = express()
 
 const isDevMode = process.argv.some(val => val === '--dev')
 if (isDevMode) {
+  const webpackDevServer = require('./webpackDevServer')
   webpackDevServer(app)
   console.log('server will be started in Dev mode')
 } else {
