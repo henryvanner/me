@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "webpack": "webpack",
-    "dev": "node server.js"
+    "dev": "node server/app.js --dev"
   },
   "engines": {
     "node": "14.x",
