@@ -1,1 +1,1 @@
-web: node server/app.js
+web: yarn webpack && node server/app.js
