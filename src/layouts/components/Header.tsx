@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import 'styles/Header.scss'
 
 const Header: React.FC = () => {
@@ -22,9 +23,9 @@ const Header: React.FC = () => {
           </div>
           <nav>
             <ul className='appNav'>
-              <li className='appNav__item appNav__item--selected'><a className='appNav__link' href='/'>My Life</a></li>
-              <li className='appNav__item'><a className='appNav__link' href='/experience'>Experience</a></li>
-              <li className='appNav__item'><a className='appNav__link' href='/skills'>Skills</a></li>
+              <li className='appNav__item appNav__item--selected'><Link className='appNav__link' to='/'>My Life</Link></li>
+              <li className='appNav__item'><Link className='appNav__link' to='/experience'>Experience</Link></li>
+              <li className='appNav__item'><Link className='appNav__link' to='/skills'>Skills</Link></li>
             </ul>
           </nav>
           <nav>

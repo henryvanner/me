@@ -5,8 +5,8 @@ import MyLife from 'pages/MyLife'
 
 const App: React.FC = () => {
   return (
-    <MainLayout>
-      <Router>
+    <Router>
+      <MainLayout>
         <Switch>
           <Route exact path='/'>
             <Redirect to='/my-life' />
@@ -18,8 +18,8 @@ const App: React.FC = () => {
             <h1>Hey this is in development. We will let you know when we are done! :)</h1>
           </Route>
         </Switch>
-      </Router>
-    </MainLayout>
+      </MainLayout>
+    </Router>
   )
 }
 
