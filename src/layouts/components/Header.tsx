@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import 'styles/Header.scss'
 
 const Header: React.FC = () => {
-  const [navBarIsOpen, setNavBarIsOpen] = useState(true)
+  const [navBarIsOpen, setNavBarIsOpen] = useState(false)
   const navBarClassName = navBarIsOpen ? 'navBar navBar--visible' : 'navBar'
 
   return (
