@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import MainLayout from 'layouts/MainLayout'
-import MyLife from './pages/MyLife'
+import MyLife from 'pages/MyLife'
 
 const App: React.FC = () => {
   return (

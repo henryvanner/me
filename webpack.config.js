@@ -7,12 +7,13 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public"),
     clean: true,
-    publicPath: '/'
+    publicPath: "/",
   },
   resolve: {
     alias: {
       components: path.resolve(__dirname, "src/components/"),
       layouts: path.resolve(__dirname, "src/layouts/"),
+      pages: path.resolve(__dirname, "src/pages"),
       styles: path.resolve(__dirname, "src/styles/"),
     },
     extensions: [".tsx", ".ts", ".js", ".scss"],
