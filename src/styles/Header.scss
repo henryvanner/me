@@ -29,7 +29,7 @@
   font-size: 1.2rem;
 }
 
-.navBar__overlay {
+.nav__overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -39,7 +39,7 @@
   z-index: 999;
   background-color: hsla(0, 0%, 0%, 0.35);
 
-  .navBar--visible & {
+  .nav--visible & {
     display: block;
   }
 
@@ -49,7 +49,7 @@
   }
 }
 
-.navBar__content {
+.nav__content {
   position: fixed;
   top: 0;
   left: -100%;
@@ -60,7 +60,7 @@
   max-width: calc(#{variables.$device-small} - 135px);
   transition: left 0.5s;
 
-  .navBar--visible & {
+  .nav--visible & {
     left: 0;
   }
 
@@ -75,20 +75,20 @@
   }
 }
 
-.navBarHeader {
+.navHeader {
   padding: variables.$space-lg variables.$space-lg + variables.$space-md;
 
   @media screen and (min-width: variables.$device-medium) { display: none; }
 }
 
-.navBarHeader__name {
+.navHeader__name {
   color: #232323;
   margin: variables.$space-sm 0;
 }
-.navBarHeader__email { color: variables.$color-dark-light; }
+.navHeader__email { color: variables.$color-dark-light; }
 
-.siteNavMenu,
-.socialNavMenu {
+.appNav,
+.socialNav {
   padding: variables.$space-lg variables.$space-md;
 
   @media screen and (min-width: variables.$device-medium) {
@@ -97,7 +97,7 @@
   }
 }
 
-.siteNavMenu__item {
+.appNav__item {
   @media screen and (min-width: variables.$device-medium) {
     margin-right: variables.$space-xlg;
 
@@ -105,7 +105,7 @@
   }
 }
 
-.siteNavMenu__item--selected {
+.appNav__item--selected {
   border-radius: 0.25rem;
   background-color: scale-color(variables.$color-indigo, $lightness: 80%);
   color: variables.$color-indigo;
@@ -113,8 +113,8 @@
   @media screen and (min-width: variables.$device-medium) { all: unset; }
 }
 
-.siteNavMenu__link,
-.socialNavMenu__link {
+.appNav__link,
+.socialNav__link {
   display: block;
   padding: variables.$space-lg;
   font-weight: bold;
@@ -127,7 +127,7 @@
   }
 }
 
-.socialMediaName {
+.socialNav__brandName {
   margin-left: variables.$space-lg;
 
   @media screen and (min-width: variables.$device-medium) { display: none; }
