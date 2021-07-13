@@ -22,9 +22,9 @@ const Header: React.FC = () => {
           </div>
           <nav>
             <ul className='appNav'>
-              <li className='appNav__item appNav__item--selected'><a className='appNav__link' href='/my-life'>My Life</a></li>
-              <li className='appNav__item'><a className='appNav__link' href='/my-experience'>Experience</a></li>
-              <li className='appNav__item'><a className='appNav__link' href='/my-skills'>Skills</a></li>
+              <li className='appNav__item appNav__item--selected'><a className='appNav__link' href='/'>My Life</a></li>
+              <li className='appNav__item'><a className='appNav__link' href='/experience'>Experience</a></li>
+              <li className='appNav__item'><a className='appNav__link' href='/skills'>Skills</a></li>
             </ul>
           </nav>
           <nav>
