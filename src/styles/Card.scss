@@ -14,14 +14,18 @@ $light: #888;
   background-color: #fff;
 }
 
-.card__avatar {
-  margin: 1rem 1rem 0 0;
+.card__avatarSlot {
+  margin-right: variables.$space-lg;
+  padding-top: variables.$space-lg;
+}
+
+.card__avatarImage {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
 }
 
-.card__content-slot {
+.card__contentSlot {
   flex: 1;
   padding: 0 variables.$space-lg;
 }

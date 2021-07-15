@@ -16,10 +16,10 @@ const Card: React.FC<TimelineEvent> = ({ avatarImg, data = [], date, dateFormat 
 
   return (
     <div className='card'>
-      <div className='card__avatar__slot'>
-        <img className='card__avatar' src={ avatarImg } />
+      <div className='card__avatarSlot'>
+        <img className='card__avatarImage' src={ avatarImg } />
       </div>
-      <div className='card__content-slot'>
+      <div className='card__contentSlot'>
         <h3 className='card__title'>{ title }</h3>
         <p className='card__date'>{ formattedDate }</p>
         <div>
