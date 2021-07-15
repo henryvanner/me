@@ -10,3 +10,8 @@ interface TimelineEvent {
   dateFormat?: string,
   title: string
 }
+
+interface Skill {
+  avatarImg: string,
+  name: string
+}

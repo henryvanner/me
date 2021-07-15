@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import MainLayout from 'layouts/MainLayout'
 import MyLife from 'pages/MyLife'
+import Skills from 'pages/Skills'
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const App: React.FC = () => {
             <MyLife />
           </Route>
           <Route exact path='/skills'>
-            <h1>Hey this is in development. We will let you know when we are done! :)</h1>
+            <Skills />
           </Route>
         </Switch>
       </MainLayout>

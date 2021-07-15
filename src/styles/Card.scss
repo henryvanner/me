@@ -12,17 +12,34 @@ $light: #888;
   width: 100%;
   padding: variables.$space-xlg;
   background-color: #fff;
+
+  &.card--isSkill {
+    align-items: center;
+    padding: variables.$space-lg;
+  }
 }
 
 .card__avatarSlot {
   margin-right: variables.$space-lg;
   padding-top: variables.$space-lg;
+
+  .card--isSkill & {
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0;
+  }
 }
 
 .card__avatarImage {
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
+
+  .card--isSkill & {
+    border-radius: 0.33rem;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .card__contentSlot {
@@ -35,6 +52,10 @@ $light: #888;
   color: #444;
   margin-top: 0;
   margin-bottom: variables.$space-sm;
+
+  .card--isSkill & {
+    margin: 0;
+  }
 }
 
 .card__date {

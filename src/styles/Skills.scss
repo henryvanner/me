@@ -1,0 +1,7 @@
+@use './modules/variables';
+
+.skillCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: variables.$space-md;
+}
