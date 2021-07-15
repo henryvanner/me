@@ -15,7 +15,11 @@ $light: #888;
 
   &.card--isSkill {
     align-items: center;
-    padding: variables.$space-lg;
+    padding: variables.$space-md;
+
+    @media screen and (min-width: variables.$device-small) {
+      padding: variables.$space-lg;
+    }
   }
 }
 
