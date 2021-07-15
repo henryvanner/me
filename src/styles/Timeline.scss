@@ -1,4 +1,5 @@
 @use './modules/variables';
+@use 'sass:math';
 
 $timeline-slot-min-width: 320px;
 $line-width: 1px;
@@ -11,16 +12,16 @@ $timeline-dot-top: calc(#{variables.$space-xxlg} + #{variables.$space-lg} + #{$c
 $timeline-dot-left: calc((-1 * (#{$timeline-dot-diameter - $line-width} / 2)) - #{$line-width});
 
 .timeline__slot {
-  margin: 0 auto;
   width: 100%;
   min-width: $timeline-slot-min-width;
 
-  @media screen and (min-width: variables.$device-small) {
+  @media screen and (min-width: variables.$device-small) and (max-width: variables.$device-medium) {
+    margin: 0 auto;
     max-width: variables.$device-small;
   }
 
   @media screen and (min-width: variables.$device-medium) {
-    max-width: variables.$device-medium;
+    max-width: unset;
   }
 }
 
@@ -32,12 +33,6 @@ $timeline-dot-left: calc((-1 * (#{$timeline-dot-diameter - $line-width} / 2)) - 
 .timeline__event--left {
   @media screen and (min-width: variables.$device-medium) {
     flex-direction: row-reverse;
-
-    .card__tail {
-      left: unset;
-      right: 0;
-      transform: translateX(100%) rotate(180deg);
-    }
   }
 }
 

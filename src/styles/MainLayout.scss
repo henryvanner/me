@@ -4,6 +4,11 @@
   margin-top: 51px;
   padding: variables.$space-lg;
   background-color: #fff;
+
+  @media screen and (min-width: variables.$device-medium) {
+    margin: 51px auto 0;
+    max-width: variables.$device-medium;
+  }
 }
 
 .mainLayout__body--width-full {
