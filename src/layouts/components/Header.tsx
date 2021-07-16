@@ -1,10 +1,29 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import 'styles/Header.scss'
 
+const appNavRoutes = [
+  { text: 'My Life', to: '/my-life' },
+  { text: 'Experience', to: '/experience' },
+  { text: 'Skills', to: '/skills' },
+]
+
 const Header: React.FC = () => {
+  const location = useLocation()
   const [navIsOpen, setNavIsOpen] = useState(false)
   const navClassName = navIsOpen ? 'nav nav--visible' : 'nav'
+
+  function renderAppNav () {
+    return appNavRoutes.map((route, index) => {
+      const navItemIsSelected = route.to === location.pathname
+      const navItemClassName = navItemIsSelected ? 'appNav__item appNav__item--selected' : 'appNav__item'
+      return (
+        <li className={ navItemClassName } key={ index }>
+          <Link className='appNav__link' onClick={ () => setNavIsOpen(false) } to={ route.to }>{ route.text }</Link>
+        </li>
+      )
+    })
+  }
 
   return (
     <header className='header'>
@@ -23,9 +42,7 @@ const Header: React.FC = () => {
           </div>
           <nav>
             <ul className='appNav'>
-              <li className='appNav__item appNav__item--selected'><Link className='appNav__link' to='/'>My Life</Link></li>
-              <li className='appNav__item'><Link className='appNav__link' to='/experience'>Experience</Link></li>
-              <li className='appNav__item'><Link className='appNav__link' to='/skills'>Skills</Link></li>
+              { renderAppNav() }
             </ul>
           </nav>
           <nav>
