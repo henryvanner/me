@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   const navClassName = navIsOpen ? 'nav nav--visible' : 'nav'
 
   function renderAppNav () {
-    return appNavRoutes.map((route, index) => {
+    const navItems = appNavRoutes.map((route, index) => {
       const navItemIsSelected = route.to === location.pathname
       const navItemClassName = navItemIsSelected ? 'appNav__item appNav__item--selected' : 'appNav__item'
       return (
@@ -23,6 +23,14 @@ const Header: React.FC = () => {
         </li>
       )
     })
+
+    return (
+      <nav>
+        <ul className='appNav'>
+          { navItems }
+        </ul>
+      </nav>
+    )
   }
 
   return (
@@ -40,11 +48,7 @@ const Header: React.FC = () => {
             <h3 className='navHeader__name'>Henry Aquino</h3>
             <span className='navHeader__email'>henry.vanner@gmail.com</span>
           </div>
-          <nav>
-            <ul className='appNav'>
-              { renderAppNav() }
-            </ul>
-          </nav>
+          { renderAppNav() }
           <nav>
             <ul className='socialNav'>
               <li>
