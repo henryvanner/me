@@ -1,16 +1,24 @@
 @use './modules/variables';
 
+$body-top-margin: calc(51px + #{variables.$space-lg});
+
 .mainLayout__body {
-  margin-top: 51px;
-  padding: variables.$space-lg;
+  padding: $body-top-margin variables.$space-lg variables.$space-lg;
   background-color: #fff;
 
   @media screen and (min-width: variables.$device-medium) {
-    margin: 51px auto 0;
+    margin: 0 auto;
     max-width: variables.$device-medium;
   }
 }
 
 .mainLayout__body--width-full {
   padding: 0;
+}
+
+.mainLayout__skipToMainContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

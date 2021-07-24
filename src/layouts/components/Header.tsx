@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import 'styles/Header.scss'
 
-const appNavRoutes = [
-  { text: 'My Life', to: '/my-life' },
-  { text: 'Experience', to: '/experience' },
-  { text: 'Skills', to: '/skills' },
+const appNavLinks = [
+  { 'aria-label': 'Henry\'s life', text: 'My Life', to: '/my-life' },
+  { 'aria-label': 'Henry\'s experience', text: 'Experience', to: '/experience' },
+  { 'aria-label': 'Henry\'s skills', text: 'Skills', to: '/skills' },
 ]
 
 const Header: React.FC = () => {
@@ -14,19 +14,21 @@ const Header: React.FC = () => {
   const navClassName = navIsOpen ? 'nav nav--visible' : 'nav'
 
   function renderAppNav () {
-    const navItems = appNavRoutes.map((route, index) => {
-      const navItemIsSelected = route.to === location.pathname
+    const navItems = appNavLinks.map((link, index) => {
+      const { text, ...linkProps } = link
+      const navItemIsSelected = link.to === location.pathname
       const navItemClassName = navItemIsSelected ? 'appNav__item appNav__item--selected' : 'appNav__item'
+      const ariaCurrent = navItemIsSelected ? 'page' : false
       return (
         <li className={ navItemClassName } key={ index }>
-          <Link className='appNav__link' onClick={ () => setNavIsOpen(false) } to={ route.to }>{ route.text }</Link>
+          <Link aria-current={ ariaCurrent } className='appNav__link' onClick={ () => setNavIsOpen(false) } { ...linkProps }>{ text }</Link>
         </li>
       )
     })
 
     return (
-      <nav>
-        <ul className='appNav'>
+      <nav aria-label='Main'>
+        <ul className='appNav' role='presentation'>
           { navItems }
         </ul>
       </nav>
@@ -49,16 +51,16 @@ const Header: React.FC = () => {
             <span className='navHeader__email'>henry.vanner@gmail.com</span>
           </div>
           { renderAppNav() }
-          <nav>
-            <ul className='socialNav'>
+          <nav aria-label='Social'>
+            <ul className='socialNav' role='presentation'>
               <li>
-                <a className='socialNav__link' href='https://github.com/henryvanner' rel='noreferrer' target='_blank'>
+                <a aria-label={ 'Visit henry\'s github page' } className='socialNav__link' href='https://github.com/henryvanner' rel='noreferrer' target='_blank'>
                   <i className='fab fa-github' />
                   <span className='socialNav__brandName'>Github</span>
                 </a>
               </li>
               <li>
-                <a className='socialNav__link' href='https://www.linkedin.com/in/henryvanner/' rel='noreferrer' target='_blank'>
+                <a aria-label={ 'Visit henry\'s linkedin profile' } className='socialNav__link' href='https://www.linkedin.com/in/henryvanner/' rel='noreferrer' target='_blank'>
                   <i className='fab fa-linkedin-in' />
                   <span className='socialNav__brandName'>LinkedIn</span>
                 </a>
