@@ -12,6 +12,7 @@ interface TimelineEvent {
 }
 
 interface Skill {
+  id: string,
   avatarImg: string,
   name: string
 }

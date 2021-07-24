@@ -1,38 +1,48 @@
 {
   "data": [
     {
+      "id": "1",
       "avatarImg": "https://avatars.githubusercontent.com/u/6412038?s=200&v=4",
       "name": "React JS"
     },
     {
+      "id": "2",
       "avatarImg": "https://bestofjs.org/logos/typescript.svg",
       "name": "Typescript"
     },
     {
+      "id": "3",
       "avatarImg": "https://logos-download.com/wp-content/uploads/2021/01/Git_Logo.svg",
       "name": "git"
     },
     {
+      "id": "4",
       "avatarImg": "https://graphql.org/img/logo.svg",
       "name": "GraphQL"
     },
     {
+      "id": "5",
       "avatarImg": "https://bestofjs.org/logos/apollo.svg",
       "name": "Apollo Client"
     },
     {
+      "id": "6",
       "avatarImg": "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
-      "name": "Javascript"
+      "name": "Javascript",
+      "comment": "I'm fairly familiar with javascript concepts and ES6, but also with a few of the most recent features, like optional chaining, nullish coalescing, destructuring, import, among others."
     },
     {
+      "id": "7",
       "avatarImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/128px-OpenLayers_logo.svg.png",
-      "name": "Openlayers"
+      "name": "Openlayers 3"
     },
     {
+      "id": "8",
       "avatarImg": "https://cdn.iconscout.com/icon/free/png-256/sass-2749336-2284726.png",
       "name": "Sass"
     },
     {
+      "id": "9",
       "avatarImg": "https://www.statsig.com/images/oss/expressjs.png",
       "name": "Express"
     }

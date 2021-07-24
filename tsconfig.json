@@ -10,6 +10,7 @@
     "target": "ES6",
     "resolveJsonModule": true,
     "baseUrl": "./",
+    "strict": true,
     "paths": {
       "components/*": ["src/components/*"],
       "layouts/*": ["src/layouts/*"],
