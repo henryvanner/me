@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   background-color: variables.$color-indigo;
-  z-index: 990;
+  z-index: 90;
 }
 
 .appBar {
@@ -36,7 +36,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 100;
   background-color: hsla(0, 0%, 0%, 0.35);
 
   .nav--visible & {
@@ -55,7 +55,7 @@
   left: -100%;
   right: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 110;
   background-color: #fff;
   max-width: calc(#{variables.$device-small} - 135px);
   transition: left 0.5s;
