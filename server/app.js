@@ -3,7 +3,7 @@ const express = require('express')
 
 const app = express()
 
-const isDevMode = process.argv.some(val => val === '--dev')
+const isDevMode = process.argv.some((val) => val === '--dev')
 
 if (isDevMode) {
   const webpackDevServer = require('./webpackDevServer')
@@ -31,7 +31,7 @@ app.get('*', (_, res) => {
  */
 let port = process.env.PORT
 if (port == null || port == '') {
-  port = 3000;
+  port = 3000
 }
 // EOC
 

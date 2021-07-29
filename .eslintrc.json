@@ -4,18 +4,9 @@
     "es2021": true,
     "jest": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended"],
   "parserOptions": {
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "react"],
   "rules": {
@@ -46,15 +37,8 @@
     "implicit-arrow-linebreak": ["error", "beside"],
     "indent": ["error", 2],
     "jsx-quotes": ["error", "prefer-single"],
-    "key-spacing": [
-      "error",
-      {
-        "beforeColon": false,
-        "afterColon": true
-      }
-    ],
-    "keyword-spacing": "off",
-    "@typescript-eslint/keyword-spacing": ["error"],
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+    "keyword-spacing": ["error"],
     "line-comment-position": ["error", { "position": "above" }],
     "linebreak-style": ["error", "unix"],
     "multiline-comment-style": ["error", "starred-block"],
@@ -69,27 +53,21 @@
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
     "no-unneeded-ternary": "error",
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": "error",
+    "no-use-before-define": "error",
     "no-var": "error",
     "no-whitespace-before-property": "error",
     "nonblock-statement-body-position": "error",
     "object-curly-newline": ["error", { "multiline": true }],
-    "object-curly-spacing": "off",
-    "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
     "one-var": ["off", "consecutive"],
     "operator-assignment": ["error", "never"],
     "padded-blocks": ["error", "never"],
     "prefer-exponentiation-operator": "error",
     "quote-props": ["error", "as-needed"],
     "quotes": ["error", "single"],
-    "react/prop-types": "off",
-    "react/destructuring-assignment": ["error", "always"],
-    "react/jsx-curly-spacing": ["error", { "when": "always", "children": true }],
-    "react/jsx-sort-props": ["error"],
+    "semi": ["error", "never"],
     "semi-spacing": ["error", { "before": false, "after": true }],
     "semi-style": ["error", "last"],
-    "semi": ["error", "never"],
     "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": true }],
     "space-before-blocks": "error",
     "space-in-parens": ["error", "never"],
@@ -98,12 +76,41 @@
     "spaced-comment": ["error", "always"],
     "switch-colon-spacing": ["error", { "after": true, "before": false }],
     "template-tag-spacing": ["error", "never"],
-    "wrap-regex": "error",
-    "@typescript-eslint/type-annotation-spacing": "error"
+    "wrap-regex": "error"
   },
-  "settings": {
-    "react": {
-      "version": "detect"
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+      "rules": {
+        "@typescript-eslint/keyword-spacing": ["error"],
+        "@typescript-eslint/no-use-before-define": "error",
+        "@typescript-eslint/object-curly-spacing": ["error", "always"],
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "keyword-spacing": "off",
+        "no-use-before-define": "off",
+        "object-curly-spacing": "off",
+        "react/destructuring-assignment": ["error", "always"],
+        "react/jsx-curly-spacing": [ "error", { "when": "always", "children": true } ],
+        "react/jsx-sort-props": ["error"],
+        "react/prop-types": "off"
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
     }
-  }
+  ]
 }
