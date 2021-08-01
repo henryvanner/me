@@ -9,7 +9,7 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["@typescript-eslint", "react", "cypress"],
   "rules": {
     "array-bracket-spacing": ["error", "never"],
     "arrow-parens": ["error", "always"],
@@ -123,6 +123,13 @@
           "version": "detect"
         }
       }
+    },
+    {
+      "files": ["cypress/**/*.js"],
+      "env": {
+        "cypress/globals": true
+      },
+      "extends": ["plugin:cypress/recommended"]
     }
   ]
 }
