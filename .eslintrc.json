@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "jest": true,
+    "node": true
   },
   "extends": ["eslint:recommended"],
   "parserOptions": {
@@ -88,7 +89,6 @@
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "sourceType": "module",
         "ecmaFeatures": {
           "jsx": true
         }
@@ -102,10 +102,22 @@
         "no-use-before-define": "off",
         "object-curly-spacing": "off",
         "react/destructuring-assignment": ["error", "always"],
-        "react/jsx-curly-spacing": [ "error", { "when": "always", "children": true } ],
+        "react/jsx-curly-spacing": [
+          "error",
+          { "when": "always", "children": true }
+        ],
         "react/jsx-sort-props": ["error"],
         "react/prop-types": "off"
       },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+    },
+    {
+      "files": ["*.test.js"],
+      "extends": ["eslint:recommended", "plugin:react/recommended"],
       "settings": {
         "react": {
           "version": "detect"
