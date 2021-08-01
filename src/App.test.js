@@ -4,8 +4,9 @@ import { fireEvent, render, within } from '@testing-library/react'
 
 describe('General test of the App', () => {
   test('App loads and shows `My Life` as the initial page', () => {
-    const { getAllByText } = render(<App />)
-    expect(getAllByText('My Life').length).toBe(3)
+    const { getByRole } = render(<App />)
+    const mainContent = getByRole('main')
+    within(mainContent).getByText('My Life')
   })
 
   test('App `Navs` render correctly', () => {
