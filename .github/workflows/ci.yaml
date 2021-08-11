@@ -1,0 +1,17 @@
+name: Continous Integration
+on:
+  push:
+    branches: [ master ]
+jobs:
+  check-node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js v14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Install Dependencies
+        run: yarn install
+      - name: Run E2E Test
+        run: yarn run test:cypress
