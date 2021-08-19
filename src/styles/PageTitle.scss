@@ -1,6 +1,6 @@
 @use './modules/variables';
 
-.pageTitle {
+.page__title {
   display: none;
   margin-bottom: 2.5rem;
   width: 100%;
@@ -9,4 +9,9 @@
   @media screen and (min-width: variables.$device-medium) {
     display: inline-block;
   }
+}
+
+.page__sectionHeader {
+  margin-top: 0;
+  font-size: 1.2rem;
 }

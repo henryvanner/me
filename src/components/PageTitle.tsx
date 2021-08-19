@@ -10,7 +10,7 @@ const PageTitle: React.FC = ({ children }) => {
     }
   }, [])
 
-  return <h1 className='pageTitle'>{ children }</h1>
+  return <h1 className='page__title'>{ children }</h1>
 }
 
 export default PageTitle
