@@ -1,4 +1,11 @@
+const process = require('process')
+
+const isDevMode = process.env.NODE_ENV === 'development'
+
 module.exports = {
+  plugins: [
+    isDevMode && 'react-refresh/babel',
+  ].filter(Boolean),
   presets: [
     [
       '@babel/preset-env',

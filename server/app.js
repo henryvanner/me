@@ -1,14 +1,16 @@
 const process = require('process')
 const express = require('express')
-
 const app = express()
 
+// Configuration derived from command-line arguments
 const isDevMode = process.argv.some((val) => val === '--dev')
+
+// Initial configuration. It may change in later lines
+process.env.NODE_ENV = 'production'
 
 if (isDevMode) {
   const webpackDevServer = require('./webpackDevServer')
   webpackDevServer(app)
-  console.log('server will be started in Dev mode')
 }
 
 /**
@@ -37,4 +39,8 @@ if (port == null || port == '') {
 
 app.listen(port, function () {
   console.log(`'me-haquino' is running on port ${port}!\n`)
+  if (isDevMode) {
+    const open = require('open')
+    open('http://localhost:3000')
+  }
 })
