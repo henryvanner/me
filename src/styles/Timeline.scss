@@ -70,12 +70,6 @@ $timeline-dot-left: calc((-1 * (#{$timeline-dot-diameter - $line-width} / 2)) - 
 .timeline__card-slot {
   margin: $card-vertical-margin 0 $card-vertical-margin $cards-timeline-gap;
   flex-grow: 1;
-  opacity: 1;
-  transition: opacity 4s;
-
-  .timeline__event--hidden & {
-    opacity: 0;
-  }
 
   @media screen and (min-width: variables.$device-medium) {
     flex-grow: unset;
