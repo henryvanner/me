@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import 'styles/PageTitle.scss'
 
 const PageTitle: React.FC = ({ children }) => {
   useEffect(() => {

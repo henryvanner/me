@@ -1,16 +1,15 @@
 import React from 'react'
-import PageTitle from 'components/PageTitle'
 import skills from '../data/skills.json'
-import 'styles/Skills.scss'
 import SkillCardGroup from 'components/SkillCardGroup'
+import Page from 'components/Page'
+import 'styles/Skills.scss'
 
 const Skills: React.FC = () => {
   return (
-    <>
-      <PageTitle>Skills</PageTitle>
+    <Page title='Skills'>
       <h2 className='page__sectionHeader'>My Toolbox includes but does not limit to</h2>
       <SkillCardGroup skills={ skills.data } />
-    </>
+    </Page>
   )
 }
 
