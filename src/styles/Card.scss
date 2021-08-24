@@ -50,8 +50,8 @@ $light: #888;
   .card--isSkill & {
     border-radius: 0.33rem;
     margin-right: variables.$space-lg;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     vertical-align: middle;
   }
 }
@@ -70,6 +70,7 @@ $light: #888;
   .card--isSkill & {
     margin: 0;
     vertical-align: middle;
+    font-size: 1rem;
   }
 }
 

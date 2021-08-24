@@ -2,7 +2,7 @@
 
 .skillCardsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: variables.$space-md;
 
   @media screen and (min-width: variables.$device-small) {
