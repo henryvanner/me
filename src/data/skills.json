@@ -7,13 +7,24 @@
     },
     {
       "id": "2",
-      "avatarImg": "https://bestofjs.org/logos/typescript.svg",
-      "name": "Typescript"
+      "avatarImg": "https://cdn.iconscout.com/icon/free/png-256/redux-283024.png",
+      "name": "Redux"
     },
     {
-      "id": "3",
-      "avatarImg": "https://logos-download.com/wp-content/uploads/2021/01/Git_Logo.svg",
-      "name": "git"
+      "id": "11",
+      "avatarImg": "https://redux-saga.js.org/img/Redux-Saga-Logo.png",
+      "name": "Redux-Saga"
+    },
+    {
+      "id": "6",
+      "avatarImg": "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
+      "name": "Javascript",
+      "comment": "I'm fairly familiar with javascript concepts and ES6, but also with a few of the most recent features, like optional chaining, nullish coalescing, destructuring, import, among others."
+    },
+    {
+      "id": "9",
+      "avatarImg": "https://bestofjs.org/logos/typescript.svg",
+      "name": "Typescript"
     },
     {
       "id": "4",
@@ -26,25 +37,29 @@
       "name": "Apollo Client"
     },
     {
-      "id": "6",
-      "avatarImg": "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
-      "name": "Javascript",
-      "comment": "I'm fairly familiar with javascript concepts and ES6, but also with a few of the most recent features, like optional chaining, nullish coalescing, destructuring, import, among others."
-    },
-    {
-      "id": "7",
-      "avatarImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/128px-OpenLayers_logo.svg.png",
-      "name": "Openlayers 3"
-    },
-    {
       "id": "8",
       "avatarImg": "https://cdn.iconscout.com/icon/free/png-256/sass-2749336-2284726.png",
       "name": "Sass"
     },
     {
-      "id": "9",
-      "avatarImg": "https://www.statsig.com/images/oss/expressjs.png",
-      "name": "Express"
+      "id": "12",
+      "avatarImg": "https://replaydev.com/img/icons/bootstrap.png",
+      "name": "Bootstrap"
+    },
+    {
+      "id": "3",
+      "avatarImg": "https://logos-download.com/wp-content/uploads/2021/01/Git_Logo.svg",
+      "name": "git"
+    },
+    {
+      "id": "10",
+      "avatarImg": "https://images.opencollective.com/formik/7ba0331/logo/128.png",
+      "name": "Formik"
+    },
+    {
+      "id": "7",
+      "avatarImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/128px-OpenLayers_logo.svg.png",
+      "name": "Openlayers 3"
     }
   ]
 }
