@@ -2,74 +2,62 @@
   "data": [
     {
       "id": "1",
-      "avatarImg": "https://avatars.githubusercontent.com/u/6412038?s=200&v=4",
       "name": "React JS",
       "spriteIndex": 10
     },
     {
       "id": "2",
-      "avatarImg": "https://cdn.iconscout.com/icon/free/png-256/redux-283024.png",
       "name": "Redux",
       "spriteIndex": 11
     },
     {
       "id": "11",
-      "avatarImg": "https://redux-saga.js.org/img/Redux-Saga-Logo.png",
       "name": "Redux-Saga",
       "spriteIndex": 4
     },
     {
       "id": "6",
-      "avatarImg": "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
       "name": "Javascript",
       "comment": "I'm fairly familiar with javascript concepts and ES6, but also with a few of the most recent features, like optional chaining, nullish coalescing, destructuring, import, among others.",
       "spriteIndex": 7
     },
     {
       "id": "9",
-      "avatarImg": "https://bestofjs.org/logos/typescript.svg",
       "name": "Typescript",
       "spriteIndex": 12
     },
     {
       "id": "4",
-      "avatarImg": "https://graphql.org/img/logo.svg",
       "name": "GraphQL",
       "spriteIndex": 3
     },
     {
       "id": "5",
-      "avatarImg": "https://bestofjs.org/logos/apollo.svg",
       "name": "Apollo Client",
       "spriteIndex": 1
     },
     {
       "id": "8",
-      "avatarImg": "https://cdn.iconscout.com/icon/free/png-256/sass-2749336-2284726.png",
       "name": "Sass",
       "spriteIndex": 8
     },
     {
       "id": "12",
-      "avatarImg": "https://replaydev.com/img/icons/bootstrap.png",
       "name": "Bootstrap",
       "spriteIndex": 2
     },
     {
       "id": "3",
-      "avatarImg": "https://logos-download.com/wp-content/uploads/2021/01/Git_Logo.svg",
       "name": "git",
       "spriteIndex": 6
     },
     {
       "id": "10",
-      "avatarImg": "https://images.opencollective.com/formik/7ba0331/logo/128.png",
       "name": "Formik",
       "spriteIndex": 5
     },
     {
       "id": "7",
-      "avatarImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/128px-OpenLayers_logo.svg.png",
       "name": "Openlayers 3",
       "spriteIndex": 9
     }
