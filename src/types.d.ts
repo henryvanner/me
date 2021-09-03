@@ -14,5 +14,6 @@ interface TimelineEvent {
 interface Skill {
   id: string,
   avatarImg: string,
-  name: string
+  name: string,
+  spriteIndex: number
 }

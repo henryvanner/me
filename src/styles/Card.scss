@@ -48,11 +48,13 @@ $light: #888;
   height: 4.5rem;
 
   .card--isSkill & {
+    display: inline-block;
     border-radius: 0.33rem;
     margin-right: variables.$space-lg;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
     vertical-align: middle;
+    background: url('../assets/sprites.png');
   }
 }
 
