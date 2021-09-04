@@ -1,26 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { getSpriteCoordinates } from 'helpers'
 
-interface AvatarProps {
-  spriteIndex: number
+function getBackgroundPosition (spriteIndex: number) {
+  const [x, y] = getSpriteCoordinates(spriteIndex)
+  return `${x}px ${y}px !important`
 }
 
-function getSpriteCoordinates (spriteIndex: number) {
-  const spritesPadd = 2,
-    spriteSize = 24,
-    spritesPerRow = 4
-  const rowIndex = spriteIndex % spritesPerRow - 1,
-    colIndex = Math.ceil(spriteIndex / spritesPerRow) - 1
-  const x = rowIndex * spriteSize + rowIndex * 2 * spritesPadd + 2,
-    y = colIndex * spriteSize + colIndex * 2 * spritesPadd + 2
-  return [-x, -y]
-}
-
-const Avatar = styled.div<AvatarProps>`
-  background-position: ${(props) => {
-    const [x, y] = getSpriteCoordinates(props.spriteIndex)
-    return `${x}px ${y}px`
-  }} !important;
+const Avatar = styled.div<{ spriteIndex: number }>`
+  background-position: ${(props) => getBackgroundPosition(props.spriteIndex)}
 `
 
 const SkillCard: React.FC<Skill> = ({ spriteIndex, name }) => {

@@ -8,10 +8,11 @@
     "outDir": "./public/",
     "target": "ES6",
     "resolveJsonModule": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "strict": true,
     "paths": {
       "components/*": ["src/components/*"],
+      "helpers": ["src/helpers"],
       "layouts/*": ["src/layouts/*"],
       "pages/*": ["src/pages/*"],
       "styles/*": ["src/styles/*"],
