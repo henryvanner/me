@@ -3,11 +3,15 @@
 $body-top-margin: calc(51px + #{variables.$space-lg});
 
 .mainLayout__body {
-  padding: $body-top-margin variables.$space-lg variables.$space-lg;
+  flex: 1;
+  margin-bottom: variables.$space-xxlg;
+  padding: calc(#{$body-top-margin} + #{variables.$space-xlg}) variables.$space-lg variables.$space-lg;
   background-color: #fff;
 
   @media screen and (min-width: variables.$device-medium) {
-    margin: 0 auto;
+    margin: 0 auto variables.$space-xxlg;
+    padding: $body-top-margin variables.$space-lg variables.$space-lg;
+    width: 100%;
     max-width: variables.$device-medium;
   }
 }
@@ -28,4 +32,15 @@ $body-top-margin: calc(51px + #{variables.$space-lg});
   &:focus {
     z-index: 120;
   }
+}
+
+.mainLayout__container {
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

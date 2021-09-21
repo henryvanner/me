@@ -12,11 +12,13 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, fullWidthBody }) => {
   return (
     <>
       <a className='mainLayout__jumpToMainContent' href='#mainContent' tabIndex={ 0 }>to main content</a>
-      <Header />
-      <main className={ bodyClassName } id='mainContent'>
-        { children }
-      </main>
-      <Footer />
+      <div className='mainLayout__container'>
+        <Header />
+        <main className={ bodyClassName } id='mainContent'>
+          { children }
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
