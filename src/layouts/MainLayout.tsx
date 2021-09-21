@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from 'layouts/components/Header'
+import Footer from './components/Footer'
 import 'styles/MainLayout.scss'
 
 interface MainLayoutProps {
@@ -15,6 +16,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, fullWidthBody }) => {
       <main className={ bodyClassName } id='mainContent'>
         { children }
       </main>
+      <Footer />
     </>
   )
 }

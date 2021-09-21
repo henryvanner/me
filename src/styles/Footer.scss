@@ -1,0 +1,43 @@
+@use './modules/variables';
+
+.footer {
+  margin-top: variables.$space-xlg;
+  padding: variables.$space-lg variables.$space-xlg variables.$space-xxlg;
+  background-color: #ebebeb;
+
+  @media screen and (min-width: variables.$device-small) {
+    padding: variables.$space-lg variables.$space-xxlg variables.$space-xxlg;
+  }
+}
+
+.footer__sendMessageForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: variables.$space-md;
+  max-width: 480px;
+
+  @media screen and (min-width: variables.$device-small) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.footer__messageInput {  
+  height: 2rem;
+  margin-bottom: variables.$space-md;
+
+  @media screen and (min-width: variables.$device-small) {
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-right: variables.$space-md;
+  }
+}
+
+.footer__sendMessageButton {
+  display: inline-block;
+  border-radius: 0.33rem;
+  padding: variables.$space-md;
+  background-color: #66ad8e;
+  color: #fff;
+  text-align: center;
+}
