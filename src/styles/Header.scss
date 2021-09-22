@@ -52,12 +52,12 @@
 .nav__content {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -285px;
   right: 0;
   bottom: 0;
   z-index: 110;
   background-color: #fff;
-  max-width: calc(#{variables.$device-small} - 135px);
+  width: 285px;
   transition: left 0.5s;
 
   .nav--visible & {
