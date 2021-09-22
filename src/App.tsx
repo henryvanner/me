@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 import MainLayout from 'layouts/MainLayout'
 import MyLife from 'pages/MyLife'
 import Skills from 'pages/Skills'
+import Experience from 'pages/Experience'
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path='/skills'>
             <Skills />
+          </Route>
+          <Route exact path='/experience'>
+            <Experience />
           </Route>
         </Switch>
       </MainLayout>
