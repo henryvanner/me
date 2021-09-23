@@ -18,7 +18,16 @@ module.exports = {
         useBuiltIns: 'usage',
       },
     ],
-    '@babel/preset-typescript',
-    '@babel/preset-react',
+    [
+      '@babel/preset-react',
+      { runtime: 'automatic' },
+    ],
+    [
+      '@babel/preset-typescript',
+      {
+        allExtensions: true,
+        isTSX: true,
+      },
+    ],
   ],
 }
