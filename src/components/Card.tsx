@@ -1,8 +1,8 @@
-import React from 'react'
+import { FC } from 'react'
 import moment from 'moment'
 import 'styles/Card.scss'
 
-const DataSlice: React.FC<DataSlice> = ({ label, value }) => {
+const DataSlice: FC<DataSlice> = ({ label, value }) => {
   return (
     <p className='dataSlice'>
       <label className='dataSlice__label'>{ label }</label>
@@ -11,7 +11,7 @@ const DataSlice: React.FC<DataSlice> = ({ label, value }) => {
   )
 }
 
-const Card: React.FC<TimelineEvent> = ({ avatarImg, data = [], date, dateFormat = 'MMM DD YYYY', title }) => {
+const Card: FC<TimelineEvent> = ({ avatarImg, data = [], date, dateFormat = 'MMM DD YYYY', title }) => {
   const formattedDate = moment(date).format(dateFormat)
 
   return (

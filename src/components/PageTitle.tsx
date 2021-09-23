@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import { FC, useEffect } from 'react'
 
-const PageTitle: React.FC = ({ children }) => {
+const PageTitle: FC = ({ children }) => {
   useEffect(() => {
     const headerTitle = document.getElementsByClassName('appBar__title')[0]
     headerTitle.textContent = children as string

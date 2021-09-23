@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 import Header from 'layouts/components/Header'
 import Footer from './components/Footer'
 import 'styles/MainLayout.scss'
@@ -7,7 +7,7 @@ interface MainLayoutProps {
   fullWidthBody?: boolean
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children, fullWidthBody }) => {
+const MainLayout: FC<MainLayoutProps> = ({ children, fullWidthBody }) => {
   const bodyClassName = fullWidthBody ? 'mainLayout__body--full-width' : 'mainLayout__body'
   return (
     <>

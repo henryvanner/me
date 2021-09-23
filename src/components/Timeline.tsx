@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 import Card from 'components/Card'
 import 'styles/Timeline.scss'
 
@@ -11,7 +11,7 @@ interface TimelineProps {
   events: TimelineEvent []
 }
 
-const TimelineEvent: React.FC<TimelineEventProps> = ({ children, left, start }) => {
+const TimelineEvent: FC<TimelineEventProps> = ({ children, left, start }) => {
   const timelineDotClassName = start ? 'timeline__dot timeline__dot--top' : 'timeline__dot'
   const timelineEventClassName = left ? 'timeline__event timeline__event--left' : 'timeline__event'
 
@@ -27,7 +27,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({ children, left, start }) 
   )
 }
 
-const Timeline: React.FC<TimelineProps> = ({ events }) => {
+const Timeline: FC<TimelineProps> = ({ events }) => {
   const timelineEvents = events.map((event, index) => {
     const left = index % 2 !== 0
     const start = index === 0

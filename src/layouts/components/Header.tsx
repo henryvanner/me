@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { FC, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import 'styles/Header.scss'
 
@@ -8,7 +8,7 @@ const appNavLinks = [
   { 'aria-label': 'Henry\'s skills', text: 'Skills', to: '/skills' },
 ]
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   const location = useLocation()
   const [navIsOpen, setNavIsOpen] = useState(false)
   const navClassName = navIsOpen ? 'nav nav--visible' : 'nav'

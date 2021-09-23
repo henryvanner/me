@@ -1,7 +1,7 @@
-import React from 'react'
+import { FC } from 'react'
 import Page from 'components/Page'
 
-const MyLife: React.FC = () => {
+const MyLife: FC = () => {
   return <Page title='Experience' />
 }
 

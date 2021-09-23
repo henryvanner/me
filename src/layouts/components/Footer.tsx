@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import { FC, useState } from 'react'
 import 'styles/Footer.scss'
 
-const Footer: React.FC = () => {
+const Footer: FC = () => {
   const [message, setMessage] = useState('')
   const whatsappLink = encodeURI(`https://wa.me/51945481154?text=${message}`)
 

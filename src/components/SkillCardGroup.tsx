@@ -1,11 +1,11 @@
-import React from 'react'
+import { FC } from 'react'
 import SkillCard from './SkillCard'
 
 interface SkillCardGroupProps {
   skills: Skill[]
 }
 
-const SkillCardGroup: React.FC<SkillCardGroupProps> = ({ skills }) => {
+const SkillCardGroup: FC<SkillCardGroupProps> = ({ skills }) => {
   const renderCards = () => skills.map((skill) => (
     <SkillCard key={ skill.id } { ...skill } />
   ))

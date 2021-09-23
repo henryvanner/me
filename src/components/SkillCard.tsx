@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC, memo } from 'react'
 import styled from 'styled-components'
 import { getSpriteCoordinates } from 'helpers'
 
@@ -11,7 +11,7 @@ const Avatar = styled.div<{ spriteIndex: number }>`
   background-position: ${(props) => getBackgroundPosition(props.spriteIndex)}
 `
 
-const SkillCard: React.FC<Skill> = ({ spriteIndex, name }) => {
+const SkillCard: FC<Skill> = ({ spriteIndex, name }) => {
   return (
     <div className='card card--isSkill'>
       <Avatar className='card__avatarImage' spriteIndex={ spriteIndex } />
@@ -20,4 +20,4 @@ const SkillCard: React.FC<Skill> = ({ spriteIndex, name }) => {
   )
 }
 
-export default React.memo(SkillCard)
+export default memo(SkillCard)
