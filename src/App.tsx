@@ -22,6 +22,7 @@ const App: FC = () => {
           <Route exact path='/experience'>
             <Experience />
           </Route>
+          <Redirect to='/' />
         </Switch>
       </MainLayout>
     </Router>
