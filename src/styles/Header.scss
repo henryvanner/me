@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: variables.$color-indigo;
+  background-color: variables.$primary-color;
   z-index: 90;
 }
 
@@ -119,8 +119,8 @@
 
   .appNav__item--selected & {
     border-radius: 0.25rem;
-    background-color: scale-color(variables.$color-indigo, $lightness: 80%);
-    color: variables.$color-indigo;
+    background-color: scale-color(variables.$primary-color, $lightness: 80%);
+    color: variables.$primary-color;
 
     @media screen and (min-width: variables.$device-medium) {
       border-radius: 0;
