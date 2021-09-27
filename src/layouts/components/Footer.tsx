@@ -14,7 +14,7 @@ const Footer: FC = () => {
       </ul>
       <div className='footer__sendMessageForm'>
         <input className='footer__messageInput' onChange={ (e) => setMessage(e.target.value) } type='text' value={ message } />
-        <a className='footer__sendMessageButton' href={ whatsappLink } rel='noreferrer' target='_blank'>Send Message</a>
+        <a className='footer__sendMessageButton' href={ whatsappLink } rel='noreferrer' role='button' target='_blank'>Send Message</a>
       </div>
     </footer>
   )
