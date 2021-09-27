@@ -7,7 +7,7 @@ import 'styles/Skills.scss'
 const Skills: FC = () => {
   return (
     <Page title='Skills'>
-      <h2 className='page__sectionHeader'>My Toolbox includes but does not limit to</h2>
+      <h2 className='page__sectionHeader'>My Toolkit includes but does not limit to</h2>
       <SkillCardGroup skills={ skills.data } />
     </Page>
   )
