@@ -50,7 +50,7 @@
       ],
       "date": "2019-10-01",
       "dateFormat": "MMM YYYY",
-      "title": "Got my thesis approved"
+      "title": "Passed my Thesis Defense"
     },
     {
       "avatarImg": "https://pbs.twimg.com/profile_images/910810519996633089/mkbclxt4.jpg",
@@ -64,10 +64,27 @@
     },
     {
       "avatarImg": "https://media-exp1.licdn.com/dms/image/C4D0BAQEPO-II6ontyw/company-logo_200_200/0/1612908787928?e=2159024400&v=beta&t=7Q8rx_xIJsjh-xWslR-fH91vE7M046zSLMsXIMdDjv4",
-      "data": [{ "label": "Role", "value": "Developer" }],
+      "data": [{ "label": "Role", "value": "Front End Developer" }],
       "date": "2021-01-04",
       "dateFormat": "MMM YYYY",
       "title": "Joined Oktana"
+    },
+    {
+      "avatarImg": "https://media-exp1.licdn.com/dms/image/C4D0BAQGhVkqe3I6fAQ/company-logo_200_200/0/1635881913089?e=2159024400&v=beta&t=l1U5v3Z1YOpNEiQxwc8vJSjYNJSKDozJOlVfYzcKeo0",
+      "data": [{ "label": "Role", "value": "Front End Developer" }],
+      "date": "2021-12-29",
+      "dateFormat": "MMM YYYY",
+      "title": "Joined Experis Perú"
+    },
+    {
+      "avatarImg": "https://pbs.twimg.com/profile_images/910810519996633089/mkbclxt4.jpg",
+      "data": [
+        { "label": "Exam Type", "value": "FCE" },
+        { "label": "Level achieved", "value": "In Review" }
+      ],
+      "date": "2021-12-11",
+      "dateFormat": "MMM YYYY",
+      "title": "Took Cambridge Exam"
     }
   ]
 }
