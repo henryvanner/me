@@ -21,6 +21,7 @@ const oktana = <Link href='https://www.oktana.com/'>Oktana</Link>
 const webAccessibility = <Link href='https://www.w3.org/WAI/fundamentals/accessibility-intro/'>web accessibility</Link>
 const redux = <Link href='https://redux.js.org/'>Redux</Link>
 const reduxSaga = <Link href='https://redux-saga.js.org/'>Redux-Saga</Link>
+const brightplan = <Link href='https://www.brightplan.com/'>Brightplan</Link>
 
 const MyLife: FC = () => {
   return (
@@ -42,19 +43,22 @@ const MyLife: FC = () => {
       <section>
         <h2 className='page__sectionHeader'>Oktana</h2>
         <p>
-        I joined { oktana } as a Developer. I was part of a training program where I got familiar with { salesforce }.
-        Working here gave me the opportunity of working for a US-based company.
+          I joined { oktana } as a Developer. I was part of a training program where I got familiar with { salesforce }.
+          Working here gave me the opportunity of working for { brightplan }, a US-based company.
         </p>
-        <p>
-          I performed as a front-end dev. I started working on the removal from the project of an old framework
-          they were not going to use anymore, and then moved to fixing some bugs, which was a really good
-          introductory experience, in the sense that it really put me to the test and got me familiar with the code.
-          Later I joined a Scrum Team to work on the development/maintenance of features.
-        </p>
-        <p>
-          Here I strengthend my { javascript }, { react } and { css } Skills, but also got familiarity with { redux } and { reduxSaga }.
-          Besides, I learned and put to practice { webAccessibility } concepts and guidelines.
-        </p>
+        <article>
+          <h3 className='page__subSectionHeader'>Brightplan</h3>
+          <p>
+            I performed as a front-end dev. I started working on the removal from the project of an old framework
+            they were not going to use anymore, and then moved to fixing some bugs, which was a really good
+            introductory experience, in the sense that it really put me to the test and got me familiar with the code.
+            Later I joined a Scrum Team to work on the development/maintenance of features.
+          </p>
+          <p>
+            At Brightplan I strengthend my { javascript }, { react } and { css } Skills, but also got familiarity with { redux } and { reduxSaga }.
+            Besides, I learned and put to practice { webAccessibility } concepts and guidelines.
+          </p>
+        </article>
       </section>
     </Page>
   )
