@@ -7,6 +7,7 @@
         { "label": "Country", "value": "Perú" }
       ],
       "date": "1994-04-07",
+      "dateFormat": "MMM YYYY",
       "title": "I was born!"
     },
     {
@@ -72,7 +73,7 @@
     {
       "avatarImg": "https://media-exp1.licdn.com/dms/image/C4D0BAQGhVkqe3I6fAQ/company-logo_200_200/0/1635881913089?e=2159024400&v=beta&t=l1U5v3Z1YOpNEiQxwc8vJSjYNJSKDozJOlVfYzcKeo0",
       "data": [{ "label": "Role", "value": "Front End Developer" }],
-      "date": "2021-12-29",
+      "date": "2021-11-29",
       "dateFormat": "MMM YYYY",
       "title": "Joined Experis Perú"
     },
