@@ -13,8 +13,8 @@
     "build": "yarn webpack --node-env production"
   },
   "engines": {
-    "node": "14.x",
-    "npm": "7.x",
+    "node": "16.x",
+    "npm": "8.x",
     "yarn": "1.x"
   },
   "devDependencies": {
