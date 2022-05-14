@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import Timeline from 'components/Timeline'
-import myLifeEvents from '../data/myLifeEvents.json'
+import myLifeEventsData from '../data/myLifeEvents'
 import Page from 'components/Page'
 
 const MyLife: FC = () => {
   return (
     <Page title='My Life'>
-      <Timeline events={ myLifeEvents.data }/>
+      <Timeline events={ myLifeEventsData.data }/>
     </Page>
   )
 }

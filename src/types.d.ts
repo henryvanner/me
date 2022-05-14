@@ -4,7 +4,7 @@ interface DataSlice {
 }
 
 interface TimelineEvent {
-  avatarImg: string,
+  icon: any,
   data?: ReadonlyArray<DataSlice>,
   date: moment.MomentInput,
   dateFormat?: string,
