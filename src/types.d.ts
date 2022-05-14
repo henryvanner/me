@@ -14,5 +14,5 @@ interface TimelineEvent {
 interface Skill {
   id: string,
   name: string,
-  spriteIndex: number
+  icon: any
 }

@@ -13,8 +13,8 @@ $light: #888;
   background-color: #fff;
 
   &.card--isSkill {
-    display: block;
     padding: variables.$space-md;
+    align-items: center;
 
     @media screen and (min-width: variables.$device-small) {
       padding: variables.$space-lg;
@@ -54,8 +54,12 @@ $light: #888;
     width: 24px;
     height: 24px;
     vertical-align: middle;
-    background: url('../assets/sprites.png');
   }
+}
+
+.card__skillIcon {
+  margin-right: 0.35rem;
+  font-size: 1.25rem;
 }
 
 .card__contentSlot {
