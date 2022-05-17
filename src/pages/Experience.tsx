@@ -51,7 +51,7 @@ const MyLife: FC = () => {
         </p>
       </article>
       <article>
-        <h2 className='page__sectionHeader'>Oktana</h2>
+        <h2 className='page__sectionHeader'>Experis</h2>
         <p>
           I joined { kellerWilliams }, a US-based company. I primarily worked in the development of reusable components,
           making sure they follow the company theme guidelines, they are accessible and they can be used along with { reactHookForm }.
