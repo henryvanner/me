@@ -68,7 +68,7 @@ const skillsData: SkillsData = {
     },
     {
       id: "9",
-      name: "git",
+      name: "Git",
       icon: <SiGit className='card__skillIcon' />
     },
     {
